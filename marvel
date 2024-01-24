@@ -1,0 +1,12 @@
+SELECT * FROM marvel_wikia_data WHERE ALIGN LIKE 'Good Characters';
+SELECT * FROM marvel_wikia_data WHERE EYE LIKE 'Brown Eyes' AND HAIR LIKE 'Brown Hair';
+SELECT * FROM marvel_wikia_data WHERE SEX LIKE 'Male Characters' AND ALIVE LIKE 'Living Characters';
+SELECT * FROM marvel_wikia_data where `ID` LIKE'Public identity' AND APPEARANCES > 100;
+SELECT * FROM marvel_wikia_data WHERE Year BETWEEN 1960 AND 1969;
+SELECT * FROM marvel_wikia_data WHERE ALIGN NOT LIKE 'Neutral Characters';
+SELECT * FROM marvel_wikia_data WHERE GSM LIKE '';
+SELECT * FROM marvel_wikia_data WHERE ALIVE LIKE 'Living Characters' AND APPEARANCES <= 50;
+SELECT * FROM marvel_wikia_data WHERE EYE NOT IN ('Blue Eyes','Brown Eyes');
+SELECT * FROM marvel_wikia_data WHERE APPEARANCES BETWEEN  51 AND 99;
+SELECT * FROM marvel_wikia_data WHERE SEX LIKE 'Female Characters' AND ALIVE LIKE 'Deceased Characters';
+SELECT * FROM marvel_wikia_data WHERE Year LIKE '2%';

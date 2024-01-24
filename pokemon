@@ -1,0 +1,15 @@
+SELECT * FROM pokemon;
+SELECT name, `type 1`, `type 2` FROM pokemon;
+SELECT * FROM pokemon WHERE `Type 1` = 'Fire' OR `Type 2` = 'Fire';
+SELECT * FROM pokemon WHERE speed > 90;
+SELECT * FROM pokemon ORDER BY Total DESC;
+SELECT * FROM pokemon WHERE Legendary LIKE 'True';
+SELECT name, `type 1`, `type 2` FROM pokemon WHERE Generation = 2;
+SELECT * FROM pokemon WHERE Defense > 70 AND (`Type 1` LIKE 'Grass' OR `Type 2` LIKE 'Grass');
+SELECT * FROM pokemon WHERE Attack > 50 AND Attack < 70;
+SELECT COUNT(*) AS número_de_Pokemon FROM pokemon;
+SELECT AVG(Total) FROM pokemon;
+SELECT * FROM pokemon WHERE (`Type 1` LIKE 'Water' OR `Type 2` LIKE 'Water') AND Total > 400;
+SELECT Name, `Type 1`, `Type 2` FROM pokemon WHERE Name LIKE 'C%';
+SELECT * FROM pokemon WHERE Generation = 3 AND Legendary LIKE 'False';
+SELECT * FROM pokemon WHERE Name LIKE '%Mega%';
